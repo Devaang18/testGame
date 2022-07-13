@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testing</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <h1> Pay for Prediciton </h1>
+        <h2 id="Round info"> </h2>
+    </head>
+    <body>
+        <div>
+            <ul id="events"></ul>
+            <div id="wrapper" class="button-wrapper">
+                <form id="create-room-form">
+                    <input id="create-room"/>        
+                    <button id="createRoom" >Create Room</button>
+                </form>
+                <br>
+                <form id="join-room-form">
+                    <input id="join-room"/>        
+                    <button id="joinRoom" >Join Room</button>
+                </form>
+            </div> 
+            
+        <div id="regional">
+            <p>Roll the Regional Rainfall dice</p>
+                <button id="regionalRain" onclick="regionalrainfall()">Roll Dice</button>                
+                <p id="Regional-Outcome">...</p>
+        </div>   
+        <div id="local">
+                <p>Roll the Local Rainfall dice</p>
+                <button id="localRain" onclick="localrainfall()">Roll Dice</button>                
+                <p id="Local-Outcome">...</p>
+        </div>
+        <div id="outcome">
+            <button id="outcomebutton" onclick="outcome()">View Outcome</button>
+        </div>
+        <br>
+        <div id="nextRound">
+            <button id="nextRound" onclick="roundloopbuttonRun()">Next</button>
+        </div>
+        <div id="End">
+            <button id="endButton" onclick="ending()">End</button>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+ <!--        <form id="chat-form">
+                    <input id="chat"/>
+                    <button id="say">Say</button>
+                </form>
+                <br>        onclick="pfpgame()"       -->
